@@ -1,86 +1,99 @@
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0px;
   height: 100%;
-  background-color: black;
+  background-color: #c5c6c7;
 }
 .grid-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 30% 15% auto 15%;
-    grid-template-rows: 100px auto auto 100px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 15% auto 15%;
+  grid-template-rows: 100px auto auto 100px;
+  gap: 15px;
 }
 
 .grid-item {
-    background-color: rgb(0, 242, 255);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.grid-item:hover {
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.4);
 }
 
 #area1 {
-    text-align: center;
+  background-color: #1f2833;
+  text-align: center;
 }
 
 #area2 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    text-align: center;
-    padding-top: -5px;
+  background-color: #0b0c10;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  text-align: center;
+  padding-top: -5px;
 }
 
 .name {
-    margin-bottom: -20px;
+  font-size: 3rem;
+  color: #66fcf1;
+  margin-bottom: -20px;
 }
 
 #area3 {
-    grid-row-start: 2;
-    grid-row-end: 5;
+  background-color: #45a29e;
+  grid-row-start: 2;
+  grid-row-end: 5;
 }
 
 #area4 {
-    grid-column-start: 2;
-    grid-column-end: 4
+  background-color: #66fcf1;
+  grid-column-start: 2;
+  grid-column-end: 4
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-  }
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
   
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
   
-  /* Alternates the color of each table row */
-  tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-  }
-  tbody tr:nth-child(even) {
-    background-color: #fff;
-  }
+/* Alternates the color of each table row */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
   
-  /* Makes each table row change color when mouse hovers over */
-  tbody tr:hover {
-    background-color: #ddd;
-  }  
+/* Makes each table row change color when mouse hovers over */
+tbody tr:hover {
+  background-color: #ddd;
+}  
 
 #area5 {
-    
+  background-color: #45a29e;
 }
 
 #area6 {
-    
+  background-color: #0b0c10;
 }
 
 #area7 {
-    grid-column-start: 3;
-    grid-column-end: 5;
+  background-color: #1f2833;
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 #area8 {
-    grid-column-start: 2;
-    grid-column-end: 5;
+  background-color: #66fcf1;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
