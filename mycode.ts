@@ -1,3 +1,4 @@
+// creating array of courses to add to page
 type Course = {
     courseNumber: string;
     courseName: string;
@@ -29,6 +30,7 @@ const CIS371: Course = {
     semesterTaken: 'Winter 2023'
 }
 
+// adding courses array as table element in for loop
 const myCourses: Array<Course> = [CIS162, HNR153, MTH225, CIS241, CIS371];
 const tArea4 = document.getElementById("area4");
 const table = document.createElement('table');
@@ -54,7 +56,7 @@ for (let i=0;i<myCourses.length;i++) {
 table.appendChild(tableBody);
 tArea4?.appendChild(table);
 
-
+// creating companies with abbreviation for links
 type Company = {
     name: string,           // Ex: "MSFT"
     abbreviation: string,   // Ex: Microsoft
@@ -93,6 +95,7 @@ for (let i=0;i<companies.length;i++) {
 }
 area6?.appendChild(list);
 
+// creating type for social media icons in area8
 type SocialMedia = {
     icon: string;   // this can be a name of a local image or a URL to a remote image
     url: string;    // URL of the said social media company
